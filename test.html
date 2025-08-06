@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Game Loading</title>
+</head>
+<body>
+    <canvas id="gameCanvas" width="800" height="600"></canvas>
+    <script>
+        console.log('Script starting...');
+        
+        let gameCanvas;
+        let ctx;
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('DOM Content Loaded');
+            
+            gameCanvas = document.getElementById('gameCanvas');
+            if (!gameCanvas) {
+                console.error('Canvas not found!');
+                return;
+            }
+            
+            ctx = gameCanvas.getContext('2d');
+            if (!ctx) {
+                console.error('Context not found!');
+                return;
+            }
+            
+            console.log('Canvas and context found successfully');
+            
+            // Draw a simple test
+            ctx.fillStyle = '#FF0000';
+            ctx.fillRect(10, 10, 100, 100);
+            ctx.fillStyle = '#FFFFFF';
+            ctx.font = '20px Arial';
+            ctx.fillText('Test Loading Works!', 50, 50);
+            
+            console.log('Test complete');
+        });
+        
+        console.log('Script loaded');
+    </script>
+</body>
+</html>

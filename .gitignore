@@ -1,0 +1,26 @@
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# VS Code workspace files (optional - you can remove this line if you want to include workspace settings)
+*.code-workspace
+
+# Temporary files
+*.tmp
+*.temp
+*~
+
+# Logs
+*.log
+
+# Node modules (if you ever add Node.js dependencies)
+node_modules/
+
+# Build outputs (if you ever add a build process)
+dist/
+build/
